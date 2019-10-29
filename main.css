@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css?family=Cookie|Raleway:400,600,700|Roboto:400,700&display=swap');
+
+/*@font-face {
+    font-family: "Cookie";
+    src: local("Cookie-Regular"), url("Fonts/Cookie/Cookie-Regular.ttf") format("ttf");
+    font-style : normal;
+    font-weight : normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Raleway";
+    src: local("Raleway-Regular"), url("/Fonts/Raleway/Raleway-Regular.ttf") format("ttf");
+    font-style : normal;
+    font-weight : normal;
+}
+@font-face {
+    font-family: "Raleway";
+    src: local("Raleway-SemiBold"), url("/Fonts/Raleway/Raleway-SemiBold.ttf") format("ttf");
+    font-weight: 600;
+}
+@font-face {
+    font-family: "Raleway";
+    src: local("Raleway-Bold"), url("/Fonts/Raleway/Raleway-Bold.ttf") format("ttf");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Roboto";
+    src: local("Roboto-Regular"), url("/Fonts/Roboto/Roboto-Regular.ttf") format("ttf");
+    font-style : normal;
+    font-weight : normal;
+}
+@font-face {
+    font-family: "Roboto";
+    src: local("Roboto-Bold"), url("/Fonts/Roboto/Roboto-Bold.ttf") format("ttf");
+    font-weight: bold;
+}*/
+
+body
+{
+    background-color: #2a3b40;
+}
+
+header
+{
+    background-image: url("img/Background_1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    padding: 3%;
+}
+
+.main_menu
+{
+    margin-right: 10%;
+    display: flex;
+    justify-content: space-around;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.2rem;
+    color: rgba( 255, 255, 255, 0.78 );
+    margin-bottom: 17%;
+}
+.main_menu li
+{
+    font-weight: bold;
+    margin: 0 1rem;
+}
+
+.main_menu li:first-child
+{
+    margin-left: 10%;
+    margin-right: 20%;
+}
+
+.pack
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba( 255, 255, 255, 0.82 );
+    width: 758px;
+    /*width: 55%;*/
+    margin: auto;
+}
+
+.info_bt
+{
+    background-color: #fff;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    color: rgb( 38, 54, 58 );
+    text-align: center;
+    border: 0;
+    margin-top: 10px;
+    padding: 5px 15px;
+}
+
+.main_h
+{
+    font-family: "Cookie", cursive;
+    color: rgb( 44, 58, 66 );
+    margin-top: -0.15em;
+    margin-bottom: -0.25em;
+}
+
+.secondary_h
+{
+    text-transform: uppercase;
+    font-family: "Raleway", sans-serif;
+    color: rgb( 173, 108, 18 );
+    font-weight: bold;
+}
+
+h1.main_h
+{
+    font-size: 140px;
+}
+
+h3.secondary_h
+{
+    font-size: 60px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------------------------*/
+.m_footer
+{
+    display: grid;
+    grid-template-columns: 50% 12% 12% auto;
+    grid-template-rows: 25% 75%;
+    grid-gap: 30px;
+    grid-template-areas:
+            "m_header l_header1 l_header2 l_header3"
+            "par l_1 l_2 l_3";
+    padding: 3% 8% 4% 8%;
+    background-color: rgba( 255, 255, 255, 0.8 );
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    color: rgb( 45, 47, 42 );
+}
+
+.m_footer h5
+{
+    text-transform: uppercase;
+    grid-area: m_header;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.m_footer p
+{
+    grid-area: par;
+    font-size: 18px;
+    line-height: 1.5;
+    padding-right: 40%;
+}
+
+.m_footer div
+ {
+     text-transform: uppercase;
+     font-weight: bold;
+     font-size: 20px;
+ }
+
+.li_h_1
+{
+    grid-area: l_header1;
+}
+.li_h_2
+{
+    grid-area: l_header2;
+}
+.li_h_3
+{
+    grid-area: l_header3;
+}
+
+.m_footer li
+{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.nav_li_1
+{
+    grid-area: l_1;
+}
+.nav_li_2
+{
+    grid-area: l_2;
+}
+.nav_li_3
+{
+    grid-area: l_3;
+}
+.nav_li_3 li
+{
+    font-weight: normal;
+}
+
