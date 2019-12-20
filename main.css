@@ -1,39 +1,41 @@
-@import url('https://fonts.googleapis.com/css?family=Cookie|Raleway:400,600,700|Roboto:400,700&display=swap');
+/*@import url('https://fonts.googleapis.com/css?family=Cookie|Raleway:400,600,700|Roboto:400,700&display=swap');*/
 
-/*@font-face {
+@font-face {
     font-family: "Cookie";
-    src: local("Cookie-Regular"), url("Fonts/Cookie/Cookie-Regular.ttf") format("ttf");
-    font-style : normal;
-    font-weight : normal;
+    src: local("Cookie-Regular"), url("Fonts/Cookie/Cookie-Regular.ttf");
     font-display: swap;
-}
-@font-face {
-    font-family: "Raleway";
-    src: local("Raleway-Regular"), url("/Fonts/Raleway/Raleway-Regular.ttf") format("ttf");
-    font-style : normal;
     font-weight : normal;
 }
 @font-face {
     font-family: "Raleway";
-    src: local("Raleway-SemiBold"), url("/Fonts/Raleway/Raleway-SemiBold.ttf") format("ttf");
+    src: local("Raleway"), local("Raleway-Regular"), url("Fonts/Raleway/Raleway-Regular.ttf");
+    font-display: swap;
+    font-weight : 400;
+}
+@font-face {
+    font-family: "Raleway";
+    src: local("Raleway SemiBold"), local("Raleway-SemiBold"), url("Fonts/Raleway/Raleway-SemiBold.ttf");
+    font-display: swap;
     font-weight: 600;
 }
 @font-face {
     font-family: "Raleway";
-    src: local("Raleway-Bold"), url("/Fonts/Raleway/Raleway-Bold.ttf") format("ttf");
-    font-weight: bold;
+    src: local("Raleway Bold"), local("Raleway-Bold"), url("Fonts/Raleway/Raleway-Bold.ttf");
+    font-display: swap;
+    font-weight: 700;
 }
 @font-face {
     font-family: "Roboto";
-    src: local("Roboto-Regular"), url("/Fonts/Roboto/Roboto-Regular.ttf") format("ttf");
-    font-style : normal;
-    font-weight : normal;
+    src: local("Roboto"), local("Roboto-Regular"), url("/Fonts/Roboto/Roboto-Regular.ttf");
+    font-display: swap;
+    font-weight : 400;
 }
 @font-face {
     font-family: "Roboto";
-    src: local("Roboto-Bold"), url("/Fonts/Roboto/Roboto-Bold.ttf") format("ttf");
-    font-weight: bold;
-}*/
+    src: local("Roboto Bold"), local("Roboto-Bold"), url("/Fonts/Roboto/Roboto-Bold.ttf");
+    font-display: swap;
+    font-weight: 700;
+}
 
 body
 {
@@ -52,6 +54,7 @@ header
 .main_menu
 {
     margin-right: 10%;
+    margin-left: 10%;
     display: flex;
     justify-content: space-around;
     text-transform: uppercase;
@@ -67,24 +70,55 @@ header
 
 .main_menu li:first-child
 {
-    margin-left: 10%;
-    margin-right: 20%;
+    /*margin-right: 20%;*/
+    margin-right: auto;
 }
 
-.pack
+.header_pack
 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: rgba( 255, 255, 255, 0.82 );
-    width: 758px;
-    /*width: 55%;*/
+    /*width: 758px;*/
+    width: 55%;
     margin: 17% auto;
     padding: 5%;
 }
 
-.info_bt
+.main_header
+{
+    font-family: "Cookie", cursive;
+    color: rgb( 44, 58, 66 );
+    margin-top: -0.15em;
+    margin-bottom: -0.25em;
+    text-align: center;
+    -moz-transform: matrix( 0.75586105607896,0,0,0.75538704220976,0,0);
+    -webkit-transform: matrix( 0.75586105607896,0,0,0.75538704220976,0,0);
+    -ms-transform: matrix( 0.75586105607896,0,0,0.75538704220976,0,0);
+}
+
+.secondary_header
+{
+    text-transform: uppercase;
+    font-family: "Raleway", sans-serif;
+    color: rgb( 173, 108, 18 );
+    font-weight: 600;
+    text-align: center;
+}
+
+h1.main_header
+{
+    font-size: 140px;
+}
+
+h3.secondary_header
+{
+    font-size: 60px;
+}
+
+.info_button
 {
     background-color: #fff;
     text-transform: uppercase;
@@ -97,36 +131,38 @@ header
     margin-top: 10px;
     padding: 5px 15px;
 }
-
-.main_h
+/*-----------------------------------------------------------------------------------------------*/
+.introduction
 {
-    font-family: "Cookie", cursive;
-    color: rgb( 44, 58, 66 );
-    margin-top: -0.15em;
-    margin-bottom: -0.25em;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 6%;
+    align-items: center;
 }
 
-.secondary_h
+.contrasting_header
 {
-    text-transform: uppercase;
+    font-size: 30px;
     font-family: "Raleway", sans-serif;
-    color: rgb( 173, 108, 18 );
     font-weight: bold;
+    color: rgb( 255, 255, 255 );
+    margin-bottom: 1em;
 }
 
-h1.main_h
+.contrasting_text
 {
-    font-size: 140px;
+    font-size: 20px;
+    font-family: "Raleway", sans-serif;
+    color: rgb( 255, 255, 255 );
+    line-height: 2;
 }
 
-h3.secondary_h
+.introduction img
 {
-    font-size: 60px;
+    margin: 4%;
 }
 /*-----------------------------------------------------------------------------------------------*/
-
-/*-----------------------------------------------------------------------------------------------*/
-.m_footer
+.main_footer
 {
     display: grid;
     grid-template-columns: 50% 12% 12% auto;
@@ -144,7 +180,7 @@ h3.secondary_h
     color: rgb( 45, 47, 42 );
 }
 
-.m_footer h5
+.main_footer h5
 {
     text-transform: uppercase;
     grid-area: m_header;
@@ -152,7 +188,7 @@ h3.secondary_h
     font-size: 25px;
 }
 
-.m_footer p
+.main_footer p
 {
     grid-area: par;
     font-size: 18px;
@@ -160,45 +196,45 @@ h3.secondary_h
     padding-right: 40%;
 }
 
-.m_footer div
+.main_footer div
  {
      text-transform: uppercase;
      font-weight: bold;
      font-size: 20px;
  }
 
-.li_h_1
+.list_header_1
 {
     grid-area: l_header1;
 }
-.li_h_2
+.list_header_2
 {
     grid-area: l_header2;
 }
-.li_h_3
+.list_header_3
 {
     grid-area: l_header3;
 }
 
-.m_footer li
+.main_footer li
 {
     font-weight: bold;
     font-size: 20px;
 }
 
-.nav_li_1
+.navigation_list_1
 {
     grid-area: l_1;
 }
-.nav_li_2
+.navigation_list_2
 {
     grid-area: l_2;
 }
-.nav_li_3
+.navigation_list_3
 {
     grid-area: l_3;
 }
-.nav_li_3 li
+.navigation_list_3 li
 {
     font-weight: normal;
 }
