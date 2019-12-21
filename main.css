@@ -39,7 +39,7 @@
 
 body
 {
-    background-color: #2a3b40;
+    background-color: rgb(42, 59, 64);
 }
 
 header
@@ -84,19 +84,14 @@ header
     /*width: 758px;*/
     width: 55%;
     margin: 17% auto;
-    padding: 5%;
+    padding: 7%;
 }
 
 .main_header
 {
     font-family: "Cookie", cursive;
     color: rgb( 44, 58, 66 );
-    margin-top: -0.15em;
-    margin-bottom: -0.25em;
     text-align: center;
-    -moz-transform: matrix( 0.75586105607896,0,0,0.75538704220976,0,0);
-    -webkit-transform: matrix( 0.75586105607896,0,0,0.75538704220976,0,0);
-    -ms-transform: matrix( 0.75586105607896,0,0,0.75538704220976,0,0);
 }
 
 .secondary_header
@@ -110,17 +105,19 @@ header
 
 h1.main_header
 {
-    font-size: 140px;
+    font-size: 106px;
+    margin-top: -0.15em;
+    margin-bottom: -0.25em;
 }
 
 h3.secondary_header
 {
-    font-size: 60px;
+    font-size: 74px;
 }
 
 .info_button
 {
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     text-transform: uppercase;
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
@@ -136,7 +133,7 @@ h3.secondary_header
 {
     display: flex;
     justify-content: space-around;
-    padding: 0 6%;
+    padding: 4%;
     align-items: center;
 }
 
@@ -159,7 +156,159 @@ h3.secondary_header
 
 .introduction img
 {
-    margin: 4%;
+    margin: 0 6%;
+    height: 354px;
+    width: 527px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+.news
+{
+    background-color: rgb(212, 216, 217);
+    font-family: "Raleway", sans-serif;
+    color: rgb( 42, 59, 64 );
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5%;
+}
+.news section
+{
+    margin: 0 3%;
+}
+.news h4
+{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 2;
+    margin: 1em 0;
+}
+.news p
+{
+    font-size: 16px;
+    line-height: 1.5;
+}
+.circle
+{
+    display: inline-block;
+    border-radius: 50%;
+    background-color: rgb( 42, 59, 64 );
+    width: 30px;
+    height: 30px;
+}
+
+/*-----------------------------------------------------------------------------------------------*/
+article.menu_food
+{
+    background-image: url("img/Background_2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    padding: 7%;
+    display: flex;
+}
+div.menu_food
+{
+    background-color: rgba( 255, 255, 255, 0.82 );
+    display: grid;
+    grid-template-columns: repeat(4, minmax(auto, 270px));
+    grid-template-areas:
+            "gridHeader gridHeader gridHeader gridHeader"
+            "dishImg1 dish1 dishImg2 dish2"
+            "dish3 dishImg3 dish4 dishImg4"
+            "dishImg5 dish5 dishImg6 dish6";
+    align-items: center;
+    justify-items: center;
+    margin: auto;
+}
+.menu_food h2.main_header
+{
+    font-size: 77px;
+    margin-top: -0.15em;
+    margin-bottom: -0.25em;
+}
+.menu_food h3.secondary_header
+{
+    font-size: 45px;
+}
+.menu_food h4
+{
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb( 48, 71, 81 );
+    text-align: center;
+}
+.menu_food p
+{
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    color: rgb( 48, 71, 81 );
+    text-align: center;
+    margin: 1em 0;
+}
+.price
+{
+    font-size: 15px;
+    font-family: "Raleway", sans-serif;
+    color: rgb( 48, 71, 81 );
+    font-weight: bold;
+}
+div.menu_food div:not(#Grid_Header)
+{
+    width: 70%;
+}
+#Grid_Header
+{
+    grid-area: gridHeader;
+    margin: 5% 0;
+}
+img.dish_1
+{
+    grid-area: dishImg1;
+}
+div.dish_1
+{
+    grid-area: dish1;
+}
+img.dish_2
+{
+    grid-area: dishImg2;
+}
+div.dish_2
+{
+    grid-area: dish2;
+}
+img.dish_3
+{
+    grid-area: dishImg3;
+}
+div.dish_3
+{
+    grid-area: dish3;
+}
+img.dish_4
+{
+    grid-area: dishImg4;
+}
+div.dish_4
+{
+    grid-area: dish4;
+}
+img.dish_5
+{
+    grid-area: dishImg5;
+}
+div.dish_5
+{
+    grid-area: dish5;
+}
+img.dish_6
+{
+    grid-area: dishImg6;
+}
+div.dish_6
+{
+    grid-area: dish6;
 }
 /*-----------------------------------------------------------------------------------------------*/
 .main_footer
