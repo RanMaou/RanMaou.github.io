@@ -451,8 +451,8 @@ div.dish_6
 .main_footer
 {
     display: grid;
-    grid-template-columns: 50% 12% 12% auto;
-    grid-template-rows: 25% 75%;
+    grid-template-columns: 50% auto auto auto;
+    grid-template-rows: 25% auto;
     grid-gap: 30px;
     grid-template-areas:
             "m_header l_header1 l_header2 l_header3"
@@ -479,7 +479,7 @@ div.dish_6
     grid-area: par;
     font-size: 18px;
     line-height: 1.5;
-    padding-right: 40%;
+    padding-right: 30%;
 }
 
 .main_footer div
