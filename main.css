@@ -435,7 +435,7 @@ div.dish_6
     background-image: url("img/Background_4.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 100vmin;
 }
 /*-----------------------------------------------------------------------------------------------*/
 
