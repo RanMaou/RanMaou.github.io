@@ -41,7 +41,6 @@ body
 {
     background-color: rgb(42, 59, 64);
 }
-
 header
 {
     background-image: url("img/Background_1.png");
@@ -50,7 +49,6 @@ header
     margin: auto;
     padding: 3%;
 }
-
 .main_menu
 {
     margin-right: 10%;
@@ -67,14 +65,12 @@ header
     font-weight: bold;
     margin: 0 1rem;
 }
-
 .main_menu li:first-child
 {
     /*margin-right: 20%;*/
     margin-right: auto;
     padding-right: 1rem;
 }
-
 .header_pack
 {
     display: flex;
@@ -87,14 +83,12 @@ header
     margin: 17% auto;
     padding: 7%;
 }
-
 .main_header
 {
     font-family: "Cookie", cursive;
     color: rgb( 44, 58, 66 );
     text-align: center;
 }
-
 .secondary_header
 {
     text-transform: uppercase;
@@ -103,19 +97,16 @@ header
     font-weight: 600;
     text-align: center;
 }
-
 h1.main_header
 {
     font-size: 106px;
     margin-top: -0.15em;
     margin-bottom: -0.25em;
 }
-
 h3.secondary_header
 {
     font-size: 74px;
 }
-
 .info_button
 {
     background-color: rgb(255, 255, 255);
@@ -467,7 +458,7 @@ div.dish_6
     color: rgb( 255, 255, 255 );
     font-weight: 600;
 }
-.book_form input, select
+.book_form input, .book_form select
 {
     background-color: transparent;
     width: 13vw;
@@ -477,10 +468,7 @@ div.dish_6
     font-family: "Raleway", sans-serif;
     color: rgb( 255, 255, 255 );
     font-weight: 600;
-    padding: 3px;
-}
-.book_form label input, select
-{
+    padding: 5px;
     margin-top: 4%;
 }
 .book_form option
@@ -560,11 +548,10 @@ div.dish_6
     text-transform: uppercase;
     border-bottom: 7px solid rgb( 255, 153, 43 );
 }
-.menu_item h6, h5, p, a
+.menu_item h6, .menu_item h5, .menu_item p, .menu_item a
 {
     margin: 5%;
 }
-
 /*-----------------------------------------------------------------------------------------------*/
 .quote
 {
@@ -609,7 +596,7 @@ div.dish_6
     justify-content: center;
     margin-bottom: 2em;
 }
-.social_media img
+.social_media a
 {
     height: 46px;
     width: 46px;

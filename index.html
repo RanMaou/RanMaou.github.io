@@ -10,21 +10,21 @@
         <header>
             <nav>
                 <ul class="main_menu">
-                    <li>Brunch</li>
-                    <li>Welcome</li>
-                    <li>Menu</li>
-                    <li>Events</li>
-                    <li>Contact</li>
+                    <li><a href="#">Brunch</a></li>
+                    <li><a href="#welcome">Welcome</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <div class="header_pack">
                 <h1 class="main_header">Brunch</h1>
                 <h3 class="secondary_header">Full website</h3>
-                <button class="info_button">Read more</button>
+                <button onclick="document.location='#welcome'" class="info_button">Read more</button>
             </div>
         </header>
         <main>
-            <article class="introduction">
+            <article class="introduction" id="welcome">
                 <div>
                     <h4 class="contrasting_header">Indian traditional flavours</h4>
                     <p class="contrasting_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </p>
@@ -51,7 +51,7 @@
                     <p>Lorem ipsum dolor sit amet, consecte sectetur adipisicing elit, tation omne ullamco laboris nisi ut aliqolore.</p>
                 </section>
             </article>
-            <article class="menu_food">
+            <article class="menu_food" id="menu">
                 <div class="menu_food">
                     <div id="Grid_Header">
                         <h2 class="main_header">India</h2>
@@ -95,7 +95,7 @@
                     </div>
                 </div>
             </article>
-            <article class="addition_navigation">
+            <article class="addition_navigation" id="ethic">
                 <h3>Traditional cuisine made easy</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis</p>
                 <div>
@@ -105,10 +105,10 @@
                 </div>
                 <nav>
                     <ul>
-                        <li>Meals</li>
-                        <li>Spices</li>
-                        <li>Book</li>
-                        <li>Gallery</li>
+                        <li><a href="#menu">Meals</a></li>
+                        <li><a href="#welcome">Spices</a></li>
+                        <li><a href="#events">Book</a></li>
+                        <li><a href="#goals">Gallery</a></li>
                     </ul>
                 </nav>
             </article>
@@ -167,16 +167,16 @@
                 </div>
             </article>
             <div id="Place_For_Background1"></div>
-            <form class="book_form">
+            <form class="book_form" id="events">
                 <h3 class="main_header">Book here</h3>
                 <div>
                     <label>How many people?<br>
                         <select size="1">
                             <option value="1">1 person</option>
                             <option value="2" selected>2 people</option>
-                            <option value="2">3 people</option>
-                            <option value="2">4 people</option>
-                            <option value="2">5+ people</option>
+                            <option value="3">3 people</option>
+                            <option value="4">4 people</option>
+                            <option value="5">5+ people</option>
                         </select>
                     </label>
                     <label>When is your date?<br><input type="date"></label>
@@ -190,7 +190,7 @@
                 <input type="submit" class="submit_button">
             </form>
             <div id="Place_For_Background2"></div>
-            <article class="new_menu2">
+            <article class="new_menu2" id="goals">
                 <h3 class="main_header">Discover</h3>
                 <h4 class="secondary_header">Our new menu</h4>
                 <div>
@@ -199,66 +199,66 @@
                         <h6>Food / 16th March, 2019</h6>
                         <h5>Lorem ipsum dolor sit</h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</p>
-                        <a href="">Read more</a>
+                        <a href="#">Read more</a>
                     </div>
                     <div class="menu_item">
                         <img src="img/img9.png" alt="Spices">
                         <h6>Spices / 16th March, 2019</h6>
                         <h5>Lorem ipsum dolor sit</h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</p>
-                        <a href="">Read more</a>
+                        <a href="#">Read more</a>
                     </div>
                     <div class="menu_item">
                         <img src="img/img10.png" alt="Chicken Curry">
                         <h6>Chicken Curry / 16th March, 2019</h6>
                         <h5>Lorem ipsum dolor sit</h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</p>
-                        <a href="">Read more</a>
+                        <a href="#">Read more</a>
                     </div>
                 </div>
             </article>
-            <section>
+            <section id="contact">
                 <blockquote class="quote">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis</p>
                     <cite>Linda Steward</cite>
                 </blockquote>
                 <div class="social_media">
-                    <img src="img/Facebook.png" alt="Facebook">
-                    <img src="img/Twitter.png" alt="Twitter">
-                    <img src="img/Instagram.png" alt="Instagram">
-                    <img src="img/Pinterest.png" alt="Pinterest">
-                    <img src="img/Google+.png" alt="Google+">
+                    <a href="https://www.facebook.com" target="_blank"><img src="img/Facebook.png" alt="Facebook"></a>
+                    <a href="https://twitter.com" target="_blank"><img src="img/Twitter.png" alt="Twitter"></a>
+                    <a href="https://www.instagram.com" target="_blank"><img src="img/Instagram.png" alt="Instagram"></a>
+                    <a href="https://www.pinterest.com" target="_blank"><img src="img/Pinterest.png" alt="Pinterest"></a>
+                    <a href="https://plus.google.com" target="_blank"><img src="img/Google+.png" alt="Google+"></a>
                 </div>
             </section>
         </main>
         <footer class="main_footer">
-            <h5>About</h5>
+            <h5 id="about">About</h5>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ultimam quantum</p>
-            <div class="list_header_1">About</div>
+            <div class="list_header_1"><a href="#about">About</a></div>
             <nav class="navigation_list_1">
                 <ul>
-                    <li>Team</li>
-                    <li>Join us</li>
-                    <li>Ethic</li>
-                    <li>Goals</li>
+                    <li><a href="#contact">Team</a></li>
+                    <li><a href="#contact">Join us</a></li>
+                    <li><a href="#ethic">Ethic</a></li>
+                    <li><a href="#goals">Goals</a></li>
                 </ul>
             </nav>
-            <div class="list_header_2">About</div>
+            <div class="list_header_2"><a href="#about">About</a></div>
             <nav class="navigation_list_2">
                 <ul>
-                    <li>Team</li>
-                    <li>Join us</li>
-                    <li>Ethic</li>
-                    <li>Goals</li>
+                    <li><a href="#contact">Team</a></li>
+                    <li><a href="#contact">Join us</a></li>
+                    <li><a href="#ethic">Ethic</a></li>
+                    <li><a href="#goals">Goals</a></li>
                 </ul>
             </nav>
-            <div class="list_header_3">About</div>
+            <div class="list_header_3"><a href="#about">About</a></div>
             <nav class="navigation_list_3">
                 <ul>
-                    <li>Team</li>
-                    <li>Join us</li>
-                    <li>Ethic</li>
-                    <li>Goals</li>
+                    <li><a href="#contact">Team</a></li>
+                    <li><a href="#contact">Join us</a></li>
+                    <li><a href="#ethic">Ethic</a></li>
+                    <li><a href="#goals">Goals</a></li>
                 </ul>
             </nav>
         </footer>
